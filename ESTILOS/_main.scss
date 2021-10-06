@@ -1,0 +1,156 @@
+@import "variables";
+
+main {
+    .busqueda {
+        #tituloPrincipal {
+            font-family: $tipografiaPrincipal;
+            font-size: 25px;
+            color: $violeta;
+            text-align: center;
+            line-height: 33px;
+            margin: 2px 44px 0px 45px;
+            width: 286px;
+            height: 108px;
+
+            #gifos {
+                color: $turquesa;
+            }
+        }
+
+        .buscador-contenedor {
+            #imagenPersonas {
+                width: 273px;
+                height: 130px;
+                margin: 31px 51px 0px 51px;
+            }
+        }
+        .trendingclass {
+            width: 236px;
+            height: 75px;
+            margin: 30px 69px 0px 70px;
+            #trending {
+                font-family: $tipografiaPrincipal;
+                font-size: 16px;
+                color: $violeta;
+                text-align: center;
+                line-height: 25px;
+            }
+            .opcionesTrending {
+                width: 225px;
+                text-align: center;
+                #textosTrending {
+                    font-family: $tipografiaPrincipal;
+                    font-size: 16px;
+                    color: $violeta;
+                    text-align: center;
+                    line-height: 25px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .contenedor-slider {
+        background-color: $gris-claro;
+        width: 100%;
+        height: 430px;
+        #trendingGifos {
+            font-family: $tipografiaPrincipal;
+            font-size: 20px;
+            color: $violeta;
+            text-align: center;
+            line-height: 30px;
+            margin: 44px 0px 0px 0px;
+            width: 375px;
+            height: 30px;
+            padding-top: 46px;
+        }
+        #ultimosGifos {
+            font-family: $tipografiaSecundaria;
+            font-size: 16px;
+            color: $negro;
+            text-align: center;
+            line-height: 23px;
+            width: 333px;
+            height: 46px;
+            margin: 9px 21px 0px 21px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .busqueda {
+            #tituloPrincipal {
+                font-size: 30px;
+                line-height: 35px;
+                padding: 76px 250px 0px 250px;
+                margin-left: 125px;
+            }
+
+            .buscador-contenedor {
+                #imagenPersonas {
+                    width: 399px;
+                    height: 190px;
+                    margin-left: 80px;
+                }
+            }
+
+            .trendingclass {
+
+                #trending {
+                    font-size: 18px;
+                    margin: 73px 100px 0px 400px;
+                }
+                .opcionesTrending {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 7px 518px 0px 325px;
+                }
+            }
+
+            .contenedor-slider {
+                height: 640px;
+                #trendingGifos {
+                    font-size: 25px;
+                    margin: 67px 445px 0px 540px;
+                }
+                #ultimosGifos {
+                    font-size: 16px;
+                    width: 500px;
+                    margin: 12px 538.5px 0px 470px;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .busqueda {
+            #tituloPrincipal {
+                width: 500px;
+                margin: 0px 253px 0px 253px;
+            }
+
+            .buscador-contenedor {
+                #imagenPersonas {
+                    margin: 24px 520px 0px 521px;
+                }
+            }
+
+            .trendingclass {
+                #trending {
+                    font-size: 18px;
+                    margin: 73px 73px 0px 600px;
+                }
+                .opcionesTrending {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 7px 18px 0px 430px;
+                    width: 402px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu propio Gifo</title>
+    <link rel="stylesheet" href="ESTILOS/style.css">
+
+</head>
+
+<body id="body">
+    <header class="sticky">
+
+        <div class="linea-violeta"></div>
+
+        <div class="navbar">
+
+            <img src="./assets/logo-mobile.svg" alt="Logo GifOs" id="logo">
+            <img src="./assets/logo-desktop.svg" alt="Logo GifOs" id="logo-desktop">
+            <img src="/assets/logo-desktop-modo-noc.svg" alt="logo nocturno" id="logo-modo-nocturno">
+
+            <nav>
+                <div class="menu">
+                    <input type="checkbox" id="checkbox" />
+
+                    <label for="checkbox" id="icon-hamburguesa">
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <span class="span3"></span>
+                    </label>
+
+                    <ul id="ul-menu">
+                        <li><a href="#" id="menu-modo" class="menu-items">Modo nocturno</a></li>
+                        <li><a href="index.html" class="menu-items">Inicio</a></li>
+                        <li><a href="favoritos.html" class="menu-items">Favoritos</a></li>
+                        <li><a href="misgifos.html" class="menu-items">Mis GIFOS</a></li>
+                        <li><a href="creargifo.html" class="menu-creargifo">
+                                <img src="./assets/button-crear-gifo.svg" alt="Crear Gifo" class="mas-violeta">
+                                <img src="./assets/button-crear-gifo-hover.svg" alt="Crear Gifo" class="mas-blanco">
+                            </a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="crearGifo">
+        <div class="contenedor-grabacion">
+            <div class="imagenes">
+                <img src="/assets/camara.svg" alt="camara" id="camaraFilmadora">
+                <img src="/assets/camara-modo-noc.svg" alt="camara" id="camaraFilmadoraModoNoc">
+                <img src="/assets/element-luz-camara.svg" alt="luzCamara" id="luzCamara">
+            </div>
+
+            <div class="recuadro">
+                <!-- Titulo principal -->
+                <h1 id="tituloRecuadro">Aquí podrás <br> crear tus propios <span>GIFOS</span></h1>
+                <p id="parrafoRecuadro">¡Crea tu GIFO en sólo 3 pasos! <br> (sólo necesitas una cámara para grabar un
+                    video)</p>
+                <!-- <div id="overlay"> -->
+
+                <div class="overlay-video" id="overlay-video">
+
+                    <div id="overlay-video-actions">
+                    </div>
+
+                    <div id="overlay-video-textos">
+                        <img src="./assets/loader.svg" alt="loading gifo" id="overlay-video-icon">
+                        <p id="overlay-video-parrafo">Estamos subiendo tu GIFO</p>
+                    </div>
+
+                </div>
+
+                <video src="" id="grabacion-video"></video>
+                <img src="" alt="" id="gifGrabado">
+
+                <img src="/assets/loader.svg" alt="icono cargando gifo" class="img-subirgifo" id="img-subirgifo" hidden>
+                <p class="texto-subirgifo" id="texto-subirgifo" hidden>Estamos subiendo tu GIFO </p>
+                <!-- </div> -->
+
+                <div id="esquina1"></div>
+                <div id="esquina2"></div>
+                <div id="esquina3"></div>
+                <div id="esquina4"></div>
+
+            </div>
+        </div>
+
+        <div class="pasos">
+
+            <div id="paso1">1</div>
+            <div id="paso2">2</div>
+            <div id="paso3">3</div>
+
+
+            <p id="contador">0:00:00</p>
+            <p id="btn-repetir">repetir captura</p>
+
+
+            <img src="/assets/element_cinta1.svg" alt="" id="cinta" class="cintaModoDiurno">
+            <img src="/assets/element_cinta1-modo-noc.svg" alt="cinta" id="cinta" class="cintaModoNocturno">
+        </div>
+
+        <div class="lineaDivisoria"></div>
+
+        <div class="botones">
+            <button class="botonGif" id="btn-comenzar">comenzar</button>
+            <button class="botonGif" id="btn-grabar">Grabar</button>
+            <button class="botonGif" id="btn-finalizar">Finalizar</button>
+            <button class="botonGif" id="btn-subirGifo">Subir gifo</button>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <h2 id="compartir">Compartir en:</h2>
+            <img src="/assets/icon_facebook.svg" alt="facebook" id="facebook">
+            <img src="/assets/icon-twitter.svg" alt="twitter" id="twitter">
+            <img src="/assets/icon_instagram.svg" alt="instagram" id="instagram">
+            <h2 id="rights">© GIFOS 2020 All Rights Reserved.</h2>
+        </div>
+
+    </footer>
+
+    <div class="lineaVioleta"></div>
+
+    <script src="/JAVASCRIPT/crearGifo.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="/JAVASCRIPT/modoNocturno.js"></script>
+    
+
+</body>
+
+</html>

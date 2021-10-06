@@ -1,0 +1,298 @@
+@import "variables";
+
+.crearGifo {
+    .contenedor-grabacion {
+        display: flex;
+        flex-direction: row;
+        .imagenes {
+            height: 162px;
+            #camaraFilmadora {
+                width: 123px;
+                height: 162px;
+                margin: 118px 0px 292px 156px;
+            }
+
+            #camaraFilmadoraModoNoc{
+                display: none;
+            }
+            #luzCamara {
+                width: 91px;
+                height: 151px;
+                margin: 124px 0px 297px 0px;
+            }
+        }
+
+        .recuadro {
+            width: 688px;
+            height: 390px;
+            border: 1px solid $violeta;
+            margin-bottom: 24px;
+            #tituloRecuadro {
+                font-family: $tipografiaPrincipal;
+                font-size: 25px;
+                color: $violeta;
+                text-align: center;
+                line-height: 35px;
+                width: 550px;
+                height: 70px;
+                margin: 134px 68px 0px 74px;
+                span {
+                    color: $turquesa;
+                }
+            }
+            #parrafoRecuadro {
+                font-family: $tipografiaSecundaria;
+                font-size: 16px;
+                color: $negro;
+                text-align: center;
+                line-height: 29px;
+                width: 446px;
+                height: 136px;
+                margin: 3px 121px 48px 121px;
+            }
+
+            .overlay-video {
+                display: none;
+                width: 480px;
+                height: 320px;
+                background-color: $violeta-op;
+                text-align: center;
+                position: absolute;
+                z-index: 5;
+                margin: 35px 104px 35px 104px;
+
+                #overlay-video-actions {
+                    display: none;
+                    position: absolute;
+                    top: 12px;
+                    right: 12px;
+                }
+
+                #overlay-video-textos {
+                    display: flex;
+                    flex-direction: column;
+
+                    #overlay-video-icon {
+                        margin: 0;
+                        display: none;
+                        width: 22px;
+                        height: 22px;
+                        margin: 122px 229px 0px 229px;
+                    }
+                    #overlay-video-parrafo {
+                        font-family: $tipografiaPrincipal;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 19px;
+                        color: $blanco;
+                        margin: 10px 0;
+                        display: none;
+                        margin: 10px 123px 126px 126px;
+                    }
+                }
+            }
+
+            #grabacion-video {
+                display: none;
+                position: absolute;
+                margin: 35px 104px 35px 104px;
+                position: relative;
+            }
+            #gifGrabado {
+                display: none;
+                width: 480px;
+                height: 320px;
+                position: absolute;
+                z-index: 2;
+                margin: 35px 104px 35px 104px;
+            }
+
+            #img-subirgifo {
+                width: 22px;
+                height: 22px;
+                margin: 157px 333px 10px 333px;
+                z-index: 200;
+            }
+
+            #esquina1 {
+                border-top: 1px solid $turquesa;
+                border-left: 1px solid $turquesa;
+                width: 27px;
+                height: 25px;
+                position: absolute;
+                top: 150px;
+                left: 400px;
+            }
+
+            #esquina2 {
+                border-bottom: 1px solid $turquesa;
+                border-left: 1px solid $turquesa;
+                width: 25px;
+                height: 27px;
+                position: absolute;
+                top: 490px;
+                left: 400px;
+            }
+
+            #esquina3 {
+                border-bottom: 1px solid $turquesa;
+                border-right: 1px solid $turquesa;
+                width: 25px;
+                height: 27px;
+                position: absolute;
+                top: 490px;
+                left: 1030px;
+            }
+
+            #esquina4 {
+                border-top: 1px solid $turquesa;
+                border-right: 1px solid $turquesa;
+                width: 25px;
+                height: 27px;
+                position: absolute;
+                top: 150px;
+                left: 1030px;
+            }
+        }
+    }
+
+    .pasos {
+        display: flex;
+        font-family: $tipografiaSecundaria;
+        font-size: 18px;
+        color: $violeta;
+        text-align: center;
+
+        #paso1 {
+            margin: 0px 26px 19px 648px;
+            border: 1px solid $violeta;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #paso2 {
+            border: 1px solid $violeta;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #paso3 {
+            border: 1px solid $violeta;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            margin: 0px 0px 19px 25px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pasoActivo {
+            color: $blanco;
+            background-color: $violeta;
+        }
+
+        #contador {
+            font-family: $tipografiaPrincipal;
+            font-size: 15px;
+            color: $violeta;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 22px;
+            font-weight: bold;
+            margin: 10px 0px 0px 196px;
+            display: none;
+        }
+        #btn-repetir {
+            font-family: $tipografiaPrincipal;
+            font-size: 13px;
+            color: $violeta;
+            letter-spacing: 0;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            width: 131px;
+            height: 16px;
+            display: none;
+            margin: 10px 0px 0px 138px;
+            cursor: pointer;
+
+            #btn-repetir:hover {
+                border-bottom: 2px solid $turquesa;
+            }
+        }
+        #cinta {
+            margin-left: 336px;
+        }
+
+        .cintaModoNocturno {
+            display: none;
+        }
+    }
+
+    .lineaDivisoria {
+        background-color: $violeta;
+        width: 795.9px;
+        height: 6.9px;
+        margin: 0px 13px 20px 322px;
+    }
+
+    .botones {
+        .botonGif {
+            font-family: $tipografiaPrincipal;
+            font-size: 13px;
+            color: $violeta;
+            letter-spacing: 0;
+            text-align: center;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: 1px solid $violeta;
+            border-radius: 25px;
+            width: 127px;
+            height: 50px;
+            margin: 0px 656px 0px 657px;
+            font-weight: bold;
+            background-color: $blanco;
+
+            .botonGif:hover {
+                color: $blanco;
+                background-color: $violeta;
+            }
+        }
+
+        #btn-grabar {
+            display: none;
+        }
+        #btn-finalizar {
+            display: none;
+        }
+        #btn-subirGifo {
+            display: none;
+        }
+    }
+
+    #overlay-video-actions {
+        display: inline-block;
+    }
+    .overlay-video-button {
+        width: 32px;
+        height: 32px;
+        background-color: $blanco-op;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        border-radius: 6px;
+        border: none;
+    }
+    .overlay-video-button:hover {
+        background-color: $blanco;
+    }
+}

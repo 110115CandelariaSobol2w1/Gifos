@@ -1,0 +1,72 @@
+@import "variables";
+
+footer{
+    .footer{
+        #compartir{
+            font-family: $tipografiaSecundaria;
+            font-size: 15px;
+            color: $negro;
+            letter-spacing: 0;
+            text-align: center;
+            padding-top: 40px;
+        }
+        #facebook{
+            width: 20px;
+            height: 20px;
+            margin: 22px 19px 46px 130px;
+        }
+        #twitter{
+            width: 18px;
+            height: 16.2px;
+            margin: 0px 18px 46px 0px;
+        }
+        #instagram{
+            width: 20px;
+            height: 20px;
+            margin: 22px 139px 46px 0px;
+        }
+        #rights{
+            font-family: $tipografiaSecundaria;
+            font-size: 14px;
+            color: $negro;
+            letter-spacing: 0;
+            line-height: 20px;
+            text-align: center;
+            /* margin: 48px 74px 23px 83px; */
+            width: 375px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1040px) {
+    footer{
+        .footer{
+            display: flex;
+        flex-direction: row;
+            #compartir{
+                font-size: 13px;
+                margin: 12px 17px 51.4px 156px;
+                width: 100px;
+            }
+            #facebook{
+                height: 20.2px;
+                margin: 47.4px 19px 48.4px 0px;
+            }
+            #twitter{
+                height: 16.3px;
+                margin: 49.4px 18px 48.4px 0px;
+            }
+            #instagram{
+                height: 20.2px;
+                margin: 47.4px 600px 48.4px 0px;
+            }
+            #rights{
+                font-size: 13px;
+                margin: 48.5px 158px 51.5px 0px;
+            }
+        }
+    
+    }
+
+}

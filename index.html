@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ESTILOS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <header class="sticky">
+
+        <div class="linea-violeta"></div>
+
+        <div class="navbar">
+
+            <img src="./assets/logo-mobile.svg" alt="Logo GifOs" id="logo">
+            <img src="./assets/logo-desktop.svg" alt="Logo GifOs" id="logo-desktop">
+            <img src="/assets/logo-desktop-modo-noc.svg" alt="logo nocturno" id="logo-modo-nocturno">
+
+            <nav>
+                <div class="menu">
+                    <input type="checkbox" id="checkbox" />
+
+                    <label for="checkbox" id="icon-hamburguesa">
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <span class="span3"></span>
+                    </label>
+
+                    <ul id="ul-menu">
+                        <li><a href="#" id="menu-modo" class="menu-items">Modo nocturno</a></li>
+                        <li><a href="index.html" class="menu-items">Inicio</a></li>
+                        <li><a href="favoritos.html" class="menu-items">Favoritos</a></li>
+                        <li><a href="misgifos.html" class="menu-items">Mis GIFOS</a></li>
+                        <li><a href="creargifo.html" class="menu-creargifo">
+                                <img src="./assets/button-crear-gifo.svg" alt="Crear Gifo" class="mas-violeta">
+                                <img src="./assets/button-crear-gifo-hover.svg" alt="Crear Gifo" class="mas-blanco">
+                            </a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+        <section class="busqueda">
+            <h1 id="tituloPrincipal">Inspírate, busca, guarda, y crea los mejores <span id="gifos">GIFOS</span></h1>
+
+            <div class="buscador-contenedor">
+                <img id="imagenPersonas" src="/assets/ilustra_header.svg" alt="Personas">
+
+                <div id="buscador" class="buscador">
+
+                    <div class="buscador-bloque">
+                        <div class="buscador-y-lupa">
+                            <img src="/assets/icon-search.svg" alt="lupa" class="buscador-lupa-gris"
+                                id="buscador-lupa-gris"> 
+                            <input type="text" placeholder="Busca GIFOS y mas" id="input-buscador"
+                                class="input-buscador">
+                        </div>
+
+                        <button id="btn-buscador">
+                            <img src="/assets/icon-search.svg" alt="buscador" id="buscador-lupa"
+                                class="icon-lupa-abierta">
+                            <img src="/assets/button-close.svg" alt="cerrar" id="cerrar-busqueda"
+                                class="icon-cerrar-busqueda">
+                        </button>
+                    </div>
+
+                    <ul class="buscador-sugerencias" id="buscador-sugerencias"></ul>
+                </div>
+
+            </div>
+
+            <div class="trendingclass">
+                <h2 id="trending">Trending:</h2>
+                <div class="opcionesTrending">
+                    <p id="textosTrending"></p>
+                </div>
+            </div>
+
+            <div id="resultados-busqueda-contenedor" class="resultados-busqueda-contenedor">
+                <h2 id="titulo-busqueda" class="titulo-busqueda"></h2>
+
+                <div id="resultados-busqueda" class="resultados-busqueda">
+
+                </div>
+
+                <button id="resultados-vermas" class="btn-generico">ver mas</button>
+            </div>
+
+        </section>
+
+        <section class="trending">
+
+            <h2>Trending GIFOS</h2>
+            <p class="trending-text">Mira los últimos GIFOS de nuestra comunidad.</p>
+
+            <div class="trending-slider-contenedor">
+
+                <div class="slider-prev" id="trending-btn-previous">
+                    <img src="./assets/button-left.svg" alt="izquierda" class="prev-violeta">
+                </div>
+
+                <div class="trending-slider-box">
+                    <div class="trending-slider" id="trending-slider">
+                    </div>
+                </div>
+
+                <div class="slider-next" id="trending-btn-next">
+                    <img src="./assets/button-right.svg" alt="derecha" class="next-violeta">
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h2 id="compartir">Compartir en:</h2>
+            <img src="/assets/icon_facebook.svg" alt="facebook" id="facebook">
+            <img src="/assets/icon-twitter.svg" alt="twitter" id="twitter">
+            <img src="/assets/icon_instagram.svg" alt="instagram" id="instagram">
+            <h2 id="rights">© GIFOS 2020 All Rights Reserved.</h2>
+        </div>
+
+    </footer>
+
+    <div class="lineaVioleta"></div>
+
+    <script src="/JAVASCRIPT/generales.js"></script>
+    <script src="/JAVASCRIPT/trending-slider.js"></script>
+    <script src="/JAVASCRIPT/modoNocturno.js"></script>
+    <script src="/JAVASCRIPT/buscador.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
+</body>
+
+</body>
+
+</html>

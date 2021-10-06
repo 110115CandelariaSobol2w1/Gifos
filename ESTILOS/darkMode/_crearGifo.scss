@@ -1,0 +1,96 @@
+body.dark{
+    background-color: $negro;
+    .crearGifo {
+        .contenedor-grabacion {
+            .imagenes{
+                height: 162px;
+                display: flex;
+                #camaraFilmadora {
+                    display: none; 
+                }
+
+                #camaraFilmadoraModoNoc {
+                    display: block;
+                    width: 123px;
+                    height: 162px;
+                    margin: 118px 0px 292px 156px;
+                }
+
+                #luzCamara {
+                    width: 91px;
+                    height: 151px;
+                    margin: 128px 0px 0px 1px;
+                }
+            }
+            .recuadro {
+                border: 1px solid $blanco;
+                background-color: $negro;
+                #tituloRecuadro {
+                    color: $blanco;
+                    span {
+                        color: $turquesa;
+                    }
+                }
+                #parrafoRecuadro {
+                    color: $blanco;
+                }
+            }
+        }
+    
+        .pasos {
+            color: $blanco;
+            #paso1 {
+                border: 1px solid $blanco;
+            }
+            #paso2 {
+                border: 1px solid $blanco;
+            }
+            #paso3 {
+                border: 1px solid $blanco;
+            }
+    
+            .pasoActivo {
+                color: $violeta;
+                background-color: $blanco;
+            }
+    
+            #contador {
+                color: $blanco;
+            }
+            #btn-repetir {
+                color: $blanco;
+    
+                #btn-repetir:hover {
+                    border-bottom: 2px solid $turquesa;
+                }
+            }
+
+            .cintaModoDiurno {
+                display: none;
+            }
+
+            .cintaModoNocturno{
+                display: block;
+            }
+        }
+    
+        .lineaDivisoria {
+            background-color: $blanco;
+        }
+    
+        .botones {
+            .botonGif {
+                color: $blanco;
+                border: 1px solid $blanco;
+                background-color: $negro;
+    
+                .botonGif:hover {
+                    color: $blanco;
+                    background-color: $negro
+                }
+            }
+    
+        }
+    }
+    
+}

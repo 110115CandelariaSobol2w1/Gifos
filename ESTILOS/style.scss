@@ -1,0 +1,42 @@
+//VARIABLES
+@import "variables";
+
+//ESTILOS GENERALES
+@import "navBar";
+@import "footer";
+
+//ESTILOS PARTICULARES
+
+//HOME
+@import "main";
+
+//FAVORITOS
+@import "favoritos";
+
+//MIS GIFOS
+@import "misGifos";
+
+//CREAR GIFO
+@import "crearGifo";
+
+//trending slider
+@import "trending-slider";
+
+//buscador
+@import "buscador";
+
+@import "modal";
+
+//MODO NOCTURNO
+@import "darkMode/crearGifo";
+@import "darkMode/favoritos";
+@import "darkMode/footer";
+@import "darkMode/main";
+@import "darkMode/misGifos";
+@import "darkMode/modal";
+@import "darkMode/navBar";
+@import "darkMode/trending-slider";
+@import "darkMode/buscador";
+
+
+

@@ -1,0 +1,43 @@
+body.dark {
+    main {
+        .busqueda {
+            #tituloPrincipal {
+                color: $blanco;
+            }
+            .search_form {
+                border: 1px solid $blanco;
+                .lupaDiurno {
+                    display: none;
+                }
+                .lupaNocturno{
+                    display: block;
+                }
+                .barraBuscador {
+                    #buscador {
+                        color: $negro;
+                    }
+                }
+            }
+            .trendingclass {
+                #trending {
+                    color: $blanco;
+                }
+                .opcionesTrending {
+                    #textosTrending {
+                        color: $blanco;
+                    }
+                }
+            }
+        }
+
+        .contenedor-slider {
+            background-color: $fondoTrendingDarkMode;
+            #trendingGifos {
+                color: $blanco;
+            }
+            #ultimosGifos {
+                color: $blanco;
+            }
+        }
+    }
+}

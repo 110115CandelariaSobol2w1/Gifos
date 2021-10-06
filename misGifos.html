@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Gifos</title>
+    <link rel="stylesheet" href="ESTILOS/style.css">
+
+</head>
+
+<body id="body">
+    <header class="sticky">
+
+        <div class="linea-violeta"></div>
+
+        <div class="navbar">
+
+            <img src="./assets/logo-mobile.svg" alt="Logo GifOs" id="logo">
+            <img src="./assets/logo-desktop.svg" alt="Logo GifOs" id="logo-desktop">
+            <img src="/assets/logo-desktop-modo-noc.svg" alt="logo nocturno" id="logo-modo-nocturno">
+
+            <nav>
+                <div class="menu">
+                    <input type="checkbox" id="checkbox" />
+
+                    <label for="checkbox" id="icon-hamburguesa">
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <span class="span3"></span>
+                    </label>
+
+                    <ul id="ul-menu">
+                        <li><a href="#" id="menu-modo" class="menu-items">Modo nocturno</a></li>
+                        <li><a href="index.html" class="menu-items">Inicio</a></li>
+                        <li><a href="favoritos.html" class="menu-items">Favoritos</a></li>
+                        <li><a href="misgifos.html" class="menu-items">Mis GIFOS</a></li>
+                        <li><a href="creargifo.html" class="menu-creargifo">
+                                <img src="./assets/button-crear-gifo.svg" alt="Crear Gifo" class="mas-violeta">
+                                <img src="./assets/button-crear-gifo-hover.svg" alt="Crear Gifo" class="mas-blanco">
+                            </a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section id="gifos-sin-contenido">
+        <img id="iconMisGifos" src="/assets/icon-mis-gifos.svg" alt="misGifos">
+        <h1 id="misGifos">Mis GIFOS</h1>
+        <div id="gifos-vacio">
+            <img id="iconGifosEmpty" src="/assets/icon-mis-gifos-sin-contenido.svg" alt="">
+            <p id="crearGifo">¡Anímate a crear tu primer GIFO!</p>
+        </div>
+    </section>
+
+    <section id="misgifos-creados">
+
+        <div class="resultados-misgifos" id="resultados-misgifos">
+
+            
+
+        </div>
+    </section>
+
+    <section class="trending">
+
+        <h2>Trending GIFOS</h2>
+        <p class="trending-text">Mira los últimos GIFOS de nuestra comunidad.</p>
+
+        <div class="trending-slider-contenedor">
+
+            <div class="slider-prev" id="trending-btn-previous">
+                <img src="./assets/button-left.svg" alt="izquierda" class="prev-violeta">
+            </div>
+
+            <div class="trending-slider-box">
+                <div class="trending-slider" id="trending-slider">
+                </div>
+            </div>
+
+            <div class="slider-next" id="trending-btn-next">
+                <img src="./assets/button-right.svg" alt="derecha" class="next-violeta">
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer">
+            <h2 id="compartir">Compartir en:</h2>
+            <img src="/assets/icon_facebook.svg" alt="facebook" id="facebook">
+            <img src="/assets/icon-twitter.svg" alt="twitter" id="twitter">
+            <img src="/assets/icon_instagram.svg" alt="instagram" id="instagram">
+            <h2 id="rights">© GIFOS 2020 All Rights Reserved.</h2>
+        </div>
+
+    </footer>
+
+    <div class="lineaVioleta"></div>
+
+    <script src="/JAVASCRIPT/trending-slider.js"></script> 
+    <script src="/JAVASCRIPT/misGifos.js"></script>      
+    <script src="/JAVASCRIPT/modoNocturno.js"></script>   
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>         
+    
+</body>
+
+</html>

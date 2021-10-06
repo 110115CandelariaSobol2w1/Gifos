@@ -1,0 +1,28 @@
+body.dark {
+    .trending {
+        background-color: $fondoTrendingDarkMode;
+    
+        h2 {
+            color: $blanco;
+        }
+    
+        .trending-text {
+            color: $blanco;
+        }
+    }
+    
+    
+    @media screen and (min-width: 1024px) {
+       
+    
+        .slider-prev {
+            border: 1px solid $violeta;
+
+        }
+    
+        .slider-next {
+            border:  1px solid $violeta;
+        }
+
+    }
+}

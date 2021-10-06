@@ -1,0 +1,96 @@
+body.dark {
+    background-color: $negro;
+
+    .linea-violeta {
+        background-color: $negro;
+    }
+
+    header {
+        .navbar {
+            background-color: $negro;
+
+            #logo {
+                display: none;
+            }
+
+            #logo-desktop{
+                display: none;
+            }
+
+            #logo-modo-nocturno {
+                display: block;
+                width: 56px;
+            }
+            nav {
+
+                .menu {
+                    ul {
+                        background-color: $negro;
+
+                        li {
+                            .menu-items {
+                                color: $blanco;
+                                text-decoration: none;
+                            }
+
+                            .menu-items:active {
+                                color: grey;
+                            }
+
+                            .menu-creargifo {
+                                border: 1px solid $blanco;
+                                .mas-blanco{
+                                    display: block;
+                                }
+
+                                .mas-violeta {
+                                    display: none;
+                                }
+                            }
+
+                            .menu-creargifo:hover {
+                                margin-top: 0px;
+                                padding-top: 0px;
+                                background-color: $blanco;
+
+                                .mas-violeta{
+                                    display: block;
+                                }
+                                .mas-blanco {
+                                    display: none;
+                                }
+                            }
+
+                        }
+                        
+                    }
+
+                    label {
+                        span {
+                            position: relative;
+                            background-color: $blanco;
+                        }
+
+                        .span1 {
+                            background-color: $blanco;
+                        }
+                        .span2 {
+                            background-color: $blanco;
+                        }
+                        .span3 {
+                            background-color: $blanco;
+                        }
+                    }
+
+                    input:checked ~ label .span1 {
+                        opacity: 1;
+                        background-color: $blanco;
+                    }
+                    input:checked ~ label .span3 {
+                        background-color: $blanco;
+                    }
+                }
+            }
+        }
+    }
+}

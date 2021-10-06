@@ -1,0 +1,195 @@
+#gifos-sin-contenido {
+    #iconMisGifos {
+        width: 24px;
+        height: 22px;
+        margin: 10px 175.5px 0px 175.5px;
+    }
+    #misGifos {
+        font-family: $tipografiaPrincipal;
+        font-weight: bold;
+        font-size: 25px;
+        color: $violeta;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    #gifos-vacio {
+        display: none;
+        #iconGifosEmpty {
+            width: 150px;
+            height: 150px;
+            margin: 40px 112.5px 0px 112.5px;
+        }
+        #crearGifo {
+            font-family: $tipografiaPrincipal;
+            font-weight: bold;
+            font-size: 22px;
+            color: $turquesa;
+            text-align: center;
+            line-height: 25px;
+            width: 300px;
+            margin: 40px 37.5px 0px 37.5px;
+        }
+    }
+}
+
+#misgifos-creados {
+    margin-top: 20px;
+    text-align: center;
+
+    .resultados-misgifos {
+        display: flex !important;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: 38px 10px 53px 10px;
+    }
+}
+
+.resultados-gif-box-misgifos {
+    //cada gif
+    width: 156px;
+    height: 120px;
+    overflow: hidden;
+    margin: 0 10px 25px 10px;
+}
+
+.gif-acciones-resultados-misgifos {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    #gifos-sin-contenido {
+
+    #iconMisGifos {
+        margin: 10px 707px 0px 709px;
+    }
+    #misGifos {
+        margin: 8px 445px 0px 445px;
+        width: 550px;
+    }
+
+    #gifos-vacio {
+        #iconGifosEmpty {
+            margin: 111px 645px 0px 645px;
+        }
+        #crearGifo {
+            margin: 40px 532.5px 136px 532.5px;
+            width: 375px;       
+        }
+    }
+
+}
+    #misgifos-creados {
+        .resultados-misgifos {
+            //4 columnas
+            margin: 38px 10px 53px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    .resultados-gif-box-misgifos {
+        //cada gif
+        width: 220px;
+        height: 200px;
+        margin: 0 10px 25px 10px;
+    }
+
+    .gif-acciones-resultados-misgifos {
+        position: absolute;
+        z-index: 0;
+        background-color: $violeta-op;
+        width: 220px;
+        height: 200px;
+    }
+
+    .iconos-acciones-gif {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .iconos-acciones-box {
+        width: 32px;
+        height: 32px;
+        background-color: $blanco-op;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        border-radius: 6px;
+        border: none;
+    }
+
+    .borrar {
+        cursor: pointer;
+    }
+
+    .download {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .max {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .iconos-acciones-box:hover {
+        background-color: $blanco;
+    }
+
+    .textos-descripcion-gif-misgifos {
+        position: absolute;
+        bottom: 30px;
+        left: 18px;
+    }
+
+    .user-gif-misgifos {
+        text-align: left;
+        color: $blanco;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        padding: 0;
+        margin-bottom: 6px;
+    }
+
+    .titulo-gif-misgifos {
+        text-align: left;
+        color: $blanco;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+    }
+
+    .resultados-gif-box-misgifos:hover .gif-acciones-resultados-misgifos {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .resultados-misgifos {
+        margin: 59px 146px 47px 146px;
+    }
+
+    .resultados-gif-box-misgifos {
+        width: 260px;
+        height: 200px;
+        margin: 0 15px 31px 15px;
+    }
+
+    .gif-acciones-resultados-misgifos {
+        position: absolute;
+        z-index: 0;
+        background-color: $violeta-op;
+        width: 260px;
+        height: 200px;
+    }
+}
